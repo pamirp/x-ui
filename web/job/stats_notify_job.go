@@ -198,10 +198,10 @@ func (j *StatsNotifyJob) OnReceive() *StatsNotifyJob {
         // Extract the command from the Message.
         switch update.Message.Command() {
         case "help":
-            msg.Text = "What you need?"
+            msg.Text = "🤔 لطفا روش مورد نظر خود را برای دریافت اطلاعات سرویس انتخاب کنید."
 			msg.ReplyMarkup = numericKeyboard
         case "start":
-            msg.Text = "Hi :) \n What you need?"
+            msg.Text = "👨🏻‍💻 لطفا گزینه مورد نظر خود را انتخاب کنید."
 			msg.ReplyMarkup = numericKeyboard
 
         case "status":
